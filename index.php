@@ -29,10 +29,10 @@ $domandeFrequenti = [
     ],
 ];
 
-foreach ($domandeFrequenti as $esempio) {
-    echo $esempio['domanda'];
-    echo $esempio['risposta'];
-}
+// foreach ($domandeFrequenti as $esempio) {
+//     echo $esempio['domanda'];
+//     echo $esempio['risposta'];
+// }
 
 ?>
 
@@ -41,8 +41,63 @@ foreach ($domandeFrequenti as $esempio) {
     <head>
         <meta charset="utf-8">
         <title>Google - Domande Frequenti</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
+
+        <header>
+            <div class="header-top">
+                <div class="logo">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="logo-google">
+                </div>
+                <div class="titolo-pagina">
+                    <h2>Privacy e termini</h2>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <ul>
+                    <li>Introduzione</li>
+                    <li>Norme sulla privacy</li>
+                    <li>Termini di servizio</li>
+                    <li>Tecnologie</li>
+                    <li>Domande frequenti</li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <?php foreach ($domandeFrequenti as $esempio) { ?>
+                    <div class="esempio">
+                        <div class="domanda">
+                            <?php echo $esempio['domanda']; ?>
+                        </div>
+                        <div class="risposta">
+                            <?php echo $esempio['risposta']; ?>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </main>
+
+        <footer>
+            <div class="left">
+                <ul>
+                    <li>Google</li>
+                    <li>Tutto su Google</li>
+                    <li>Privacy</li>
+                    <li>Termini</li>
+                </ul>
+            </div>
+            <div class="right">
+                <select class="lingua">
+                    <option value="">Italiano</option>
+                    <option value="">Inglese</option>
+                    <option value="">Deutsch</option>
+                </select>
+            </div>
+        </footer>
 
     </body>
 </html>
