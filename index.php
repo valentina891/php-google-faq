@@ -41,7 +41,7 @@ $domandeFrequenti = [
     <head>
         <meta charset="utf-8">
         <title>Google - Domande Frequenti</title>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
@@ -61,7 +61,7 @@ $domandeFrequenti = [
                     <li>Norme sulla privacy</li>
                     <li>Termini di servizio</li>
                     <li>Tecnologie</li>
-                    <li>Domande frequenti</li>
+                    <li id="selected">Domande frequenti</li>
                 </ul>
             </div>
         </header>
@@ -82,20 +82,22 @@ $domandeFrequenti = [
         </main>
 
         <footer>
-            <div class="left">
-                <ul>
-                    <li>Google</li>
-                    <li>Tutto su Google</li>
-                    <li>Privacy</li>
-                    <li>Termini</li>
-                </ul>
-            </div>
-            <div class="right">
-                <select class="lingua">
-                    <option value="">Italiano</option>
-                    <option value="">Inglese</option>
-                    <option value="">Deutsch</option>
-                </select>
+            <div class="container">
+                <div class="left">
+                    <ul>
+                        <li>Google</li>
+                        <li>Tutto su Google</li>
+                        <li>Privacy</li>
+                        <li>Termini</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <select class="lingua">
+                        <option value="">Italiano</option>
+                        <option value="">Inglese</option>
+                        <option value="">Deutsch</option>
+                    </select>
+                </div>
             </div>
         </footer>
 
