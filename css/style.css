@@ -65,10 +65,14 @@ header {
     border-bottom: 3px solid #3367d6;
 }
 
-main .container {
+main {
     max-width: 970px;
     margin: 0 auto;
     padding: 30px;
+}
+
+.container {
+    margin-top: 100px;
 }
 
 .container h2 {
